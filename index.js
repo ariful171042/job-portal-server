@@ -80,6 +80,6 @@ app.get("/", (req, res) => {
   res.send("hello World");
 });
 
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
   console.log(`app listening on Port ${port}`);
 });
